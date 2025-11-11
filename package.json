@@ -1,5 +1,6 @@
 {
   "name": "socialsphere",
+  "homepage": "https://prajwal314.github.io/SocialSphere.ai/",
   "version": "1.0.0",
   "description": "A social networking app for connecting people for travel, roommates, business, dating, and social activities",
   "private": true,
@@ -8,7 +9,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.4",
@@ -36,6 +39,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^7.1.11"
